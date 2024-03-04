@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1.75rem 0;
+}
+
+.header-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.header-link {
+  color: var(--clr-graphite);
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  display: block;
+}
+
+.header-link:first-child {
+  position: relative;
+}
+
+.header-link:first-child:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  right: -15px;
+  bottom: -5px;
+  border-top: solid 1px var(--clr-graphite);
+  border-bottom: solid 1px var(--clr-graphite);
+  cursor: pointer;
+}
